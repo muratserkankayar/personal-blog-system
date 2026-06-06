@@ -1,0 +1,50 @@
+:root {
+    --blog-primary: #3157d5;
+    --blog-secondary: #6f42c1;
+}
+
+body {
+    color: #1f2937;
+}
+
+.hero-panel {
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 35%),
+        linear-gradient(135deg, var(--blog-primary), var(--blog-secondary));
+}
+
+.post-card {
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.75rem 1.5rem rgba(31, 41, 55, 0.12) !important;
+}
+
+.post-content {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+}
+
+.comment {
+    background: #f3f6fa;
+    border-left: 4px solid var(--blog-primary);
+}
+
+.error-panel {
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+@media (max-width: 575.98px) {
+    .display-5,
+    .display-6 {
+        font-size: 2rem;
+    }
+}
